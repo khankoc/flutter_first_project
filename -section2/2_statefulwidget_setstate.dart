@@ -13,13 +13,8 @@ class MyApp extends StatelessWidget {
     debugPrint("print widget");
     return MaterialApp(
       title: "My Counter App",
-      theme: ThemeData(primarySwatch: Colors.teal,
-                       textTheme: TextTheme(headline1: TextStyle(
-                        color: Colors.black,
-                        fontWeight: FontWeight.w500
-                       ))),
+      theme: ThemeData(primarySwatch: Colors.teal),
       home: MyHomePage(),
-      
 
 
 
@@ -46,8 +41,8 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-          Text("Butona Basılma Miktarı",style: TextStyle(fontSize: 24,),),
-          Text("$_sayac",style: Theme.of(context).textTheme.headline1),
+          Text("Butona Basılma Miktarı",style: TextStyle(fontSize: 24),),
+          Text("$_sayac",style: TextStyle(fontSize: 48,fontWeight: FontWeight.bold)),
       
         ],),
       ),
