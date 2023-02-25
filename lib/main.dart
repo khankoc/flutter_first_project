@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ilk_proje/button_turleri.dart';
+import 'package:flutter_ilk_proje/image_widgets.dart';
+import 'package:flutter_ilk_proje/my_counter_page.dart';
 
 void main() {
   debugPrint("print"); //hot restart
@@ -18,7 +21,12 @@ class MyApp extends StatelessWidget {
                         color: Colors.black,
                         fontWeight: FontWeight.w500
                        ))),
-      home: MyHomePage(),
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("Image Ornekleri"),
+        ),
+        body : TemelButonlar()
+      ),
       
 
 
@@ -28,40 +36,3 @@ class MyApp extends StatelessWidget {
 
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key});
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  int _sayac = 0;
-
-  @override
-  Widget build(BuildContext context) {
-    debugPrint("print");
-    return Scaffold(
-        appBar: AppBar(title: Text("My Counter AppBar")),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-          Text("Butona Basılma Miktarı",style: TextStyle(fontSize: 24,),),
-          Text("$_sayac",style: Theme.of(context).textTheme.headline1),
-      
-        ],),
-      ),
-      floatingActionButton: FloatingActionButton(onPressed: (){sayaciarttir();} ,child: Icon(Icons.add),),
-      );
-    
-  }
-
-  void sayaciarttir(){
-    setState(() { //setstate cok önemli hot reload yapmanı sağlar !
-      _sayac++;
-    });
-    
-  }
-
-
-}
