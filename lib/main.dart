@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ilk_proje/button_turleri.dart';
+import 'package:flutter_ilk_proje/dropdown_button.dart';
 import 'package:flutter_ilk_proje/image_widgets.dart';
 import 'package:flutter_ilk_proje/my_counter_page.dart';
+import 'package:flutter_ilk_proje/pop_up_menu.dart';
 
 void main() {
   debugPrint("print"); //hot restart
@@ -24,8 +26,9 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Text("Image Ornekleri"),
+          actions: [PopUpMenuKullanici()],
         ),
-        body : TemelButonlar()
+        body : PopUpMenuKullanici()
       ),
       
 
