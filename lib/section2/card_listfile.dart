@@ -16,15 +16,22 @@ class CartListKullanimi extends StatelessWidget {
           child: ListView(
             children: [Column(
               children: [
-                Expanded(child: tekListeElemani(personalImageUrl)),
-                Expanded(child: tekListeElemani(personalImageUrl)),
-                Expanded(child: tekListeElemani(personalImageUrl)),
-                Expanded(child: tekListeElemani(personalImageUrl)),
-                Expanded(child: tekListeElemani(personalImageUrl)),
-                Expanded(child: tekListeElemani(personalImageUrl)),
-                Expanded(child: tekListeElemani(personalImageUrl)),
+                tekListeElemani(personalImageUrl),
+                tekListeElemani(personalImageUrl),
+                tekListeElemani(personalImageUrl),
+                tekListeElemani(personalImageUrl),
+                tekListeElemani(personalImageUrl),
+                tekListeElemani(personalImageUrl),
+                tekListeElemani(personalImageUrl),
+                tekListeElemani(personalImageUrl),
+                tekListeElemani(personalImageUrl),
+                tekListeElemani(personalImageUrl),
+                tekListeElemani(personalImageUrl),
+                tekListeElemani(personalImageUrl),
+                tekListeElemani(personalImageUrl),
+                tekListeElemani(personalImageUrl),
+                tekListeElemani(personalImageUrl),
                 
-          
               ]
             ),]
           ),

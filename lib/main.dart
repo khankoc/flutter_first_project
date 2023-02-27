@@ -11,8 +11,9 @@ import 'package:flutter_ilk_proje/section2/listviewperformans.dart';
 import 'package:flutter_ilk_proje/section2/listview_layout_problemleri.dart';
 import 'package:flutter_ilk_proje/section3/1_gridviewkullanimi_ve_boxdecoration.dart';
 import 'package:flutter_ilk_proje/section3/2_gridview_with_gesture_detector.dart';
+import 'package:flutter_ilk_proje/section3/3_customscrollview_sliverappbarkullanimi.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
-
+import 'package:flutter_ilk_proje/section2/card_listfile.dart';
 
 
 void main(){
@@ -27,15 +28,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Material App',
+      theme: ThemeData(
+        primarySwatch: Colors.orange,
+        brightness: Brightness.dark
+      ),
       home: Scaffold(
-        floatingActionButton: BackButton(),
-        appBar: AppBar(
-          
-          title: Text("Grid View Örnek"),
-          actions: [PopUpMenuKullanici()],
-          
-        ),
-        body: GridViewGestureDetector(),
+        body: CustomScrollViewKullanimi(),
       ),
       builder: EasyLoading.init(), //we must add it for EasyLoading.
     );
