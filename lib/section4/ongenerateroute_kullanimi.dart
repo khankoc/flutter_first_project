@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import "package:flutter/material.dart";
-import 'package:flutter_ilk_proje/navigation_usage.dart';
-import 'package:flutter_ilk_proje/ogrenci_listesi.dart';
-import 'package:flutter_ilk_proje/ogrencidetay.dart';
+import 'package:flutter_ilk_proje/section4/navigation_usage.dart';
+import 'package:flutter_ilk_proje/section4/ogrenci_listesi.dart';
+import 'package:flutter_ilk_proje/section4/ogrencidetay.dart';
 import 'main.dart';
 
 

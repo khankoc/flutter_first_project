@@ -11,10 +11,11 @@ class CustomScrollViewKullanimi extends StatelessWidget {
     Container newcontainer(int sayi,String newtext) {
       return Container(
         alignment: Alignment.center,
-        child: Text(newtext,style: TextStyle(fontSize: 18,color: Colors.black),),
+        child: Text(newtext,style: TextStyle(fontSize: 20,color: Colors.black),),
         height: 50,
         decoration: BoxDecoration(
           color: Colors.green[sayi],
+          
           
         ),
       );
@@ -52,7 +53,7 @@ class CustomScrollViewKullanimi extends StatelessWidget {
           pinned: true, //toolbarın sürekli yukarıda gözükmesi için true! olmalı
           flexibleSpace: FlexibleSpaceBar(
             
-            title: Text("Sliver APPBAR NEW TEXT"),
+            title: Text("Ana Menu"),
             background: Image.asset(
               "assets/images/car.jpg",
               fit: BoxFit.cover,
@@ -115,7 +116,7 @@ class CustomScrollViewKullanimi extends StatelessWidget {
       height: 100,
       alignment: Alignment.center,
       child: Text(
-        "Grid Builder ile Sabit Liste Eleman ${index+1}",
+        "Selis Builder ile Sabit Liste Eleman ${index+1}",
         textAlign: TextAlign.center,
         style: TextStyle(fontSize: 18),
         ),
